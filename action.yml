@@ -1,0 +1,18 @@
+name: "tag-submodule-on-release-action"
+description: "tag-submodule-on-release-action"
+inputs:
+  repo-token: # id of input
+    description: "Github token"
+    required: true
+  repo: # repo to tag
+    description: "Repo to tag"
+    required: true
+  owner: # owner of repo to tag
+    description: "Owner of repo"
+    required: true
+  submodule_path:
+    description: "Path to submodule"
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
